@@ -18,6 +18,13 @@
         "react"
     ],
     "rules": {
+        "no-restricted-imports": [
+            "error",
+            {
+                "patterns": ["@/features/*/*"],
+            },
+        ],
+        "import/no-cycle": "error"
     },
     "settings": {
         "react": {
