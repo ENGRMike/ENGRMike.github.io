@@ -1,18 +1,18 @@
-import React from 'react';
-import './App.css';
-import { Paper, ThemeProvider } from '@mui/material';
-import { theme } from './providers/theme';
+import React from "react";
+import "./App.css";
+import { CssBaseline, Paper, ThemeProvider } from "@mui/material";
+import { darkTheme } from "./providers/theme";
 
+import { Hompage } from "./layouts/homepage-layout";
 
 function App() {
   return (
-    <main>
-      <ThemeProvider theme={theme}>
-        <Paper>
-
-        </Paper>
-      </ThemeProvider>
-    </main>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <main>
+        <Hompage />
+      </main>
+    </ThemeProvider>
   );
 }
 
