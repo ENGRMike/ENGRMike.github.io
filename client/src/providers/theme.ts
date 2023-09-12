@@ -1,5 +1,25 @@
 import { createTheme } from "@mui/material";
 
+declare module '@mui/material/styles' {
+  interface Theme {
+    text?: {
+      secondary?: {
+        fontSize: string,
+        color: string,
+      }
+    }
+  }
+
+  interface ThemeOptions {
+    text?: {
+      secondary?: {
+        fontSize?: React.CSSProperties['fontSize'],
+        color?: React.CSSProperties['color'],
+      }
+    }
+  }
+}
+
 export const lightTheme = createTheme({
   palette: {
     background: {
@@ -14,8 +34,11 @@ export const darkTheme = createTheme({
     background: {
       default: "#212121",
     },
-    text: {
-      secondary: "#03DAC6",
-    },
+  },
+  text: {
+    secondary: {
+      fontSize: '16px',
+      color: '#03DAC6'
+    }
   },
 });
