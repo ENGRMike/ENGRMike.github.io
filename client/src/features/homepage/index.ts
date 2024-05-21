@@ -1,3 +1,3 @@
-export * from './components/bio-card';
+export * from "./components/bio-card";
 
-export * from './types';
+export * from "./types";

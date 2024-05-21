@@ -1,1 +1,1 @@
-export * from './bio-card';
+export * from "./bio-card";
